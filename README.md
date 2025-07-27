@@ -43,20 +43,20 @@ A ferramenta permite ao usuário definir a **URL do serviço**, o número total 
 
 ### Usando Go diretamente:
 
-´´´
+```bash
 go run main.go --url=https://google.com --requests=1000 --concurrency=50
-´´´
+```
 
 ### Usando Docker:
 
-´´´
+```bash
 docker build -t loadtester .
 docker run loadtester --url=https://google.com --requests=1000 --concurrency=50
-´´´
+```
 
 ## Exemplo de Saída
 
-```
+```bash
 🔗 URL: https://google.com  
 📦 Total requests: 1000  
 🔀 Concurrency: 50  
@@ -125,20 +125,19 @@ The user can define the **target service URL**, the total number of **requests**
 ### Using Go:
 
 
-´´´
+```bash
 go run main.go --url=https://google.com --requests=1000 --concurrency=50
-´´´
-
+```
 ### Using Docker:
 
-´´´
+```bash
 docker build -t loadtester .
 docker run loadtester --url=https://google.com --requests=1000 --concurrency=50
-´´´
+```
 
 ## Example Output
 
-```
+```bash
 🔗 URL: http://localhost:8080  
 📦 Total requests: 1000  
 🔀 Concurrency: 50  
